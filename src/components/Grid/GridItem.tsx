@@ -20,9 +20,9 @@ export interface GridItemProps extends ContainerProps {}
 
 const useStyles = makeStyles(styles)
 
-export default function GridItem(props: GridItemProps) {
-  const { children, className, ...rest } = props
+export default function GridItem({ children, className = "", ...rest }: GridItemProps) {
   const classes = useStyles()
+
   return (
     <Grid item {...rest} className={`${classes.grid  } ${  className}`}>
       {children}

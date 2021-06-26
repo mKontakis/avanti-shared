@@ -15,4 +15,13 @@ describe('<GridContainer />', () => {
 
         expect(component).toBeTruthy()
     })
+
+    it('Renders the GridContainer component with Default props', () => {
+
+        const component = render(<GridContainer>
+           <p>Test</p>
+        </GridContainer>)
+
+        expect(component).toBeTruthy()
+    })
 })

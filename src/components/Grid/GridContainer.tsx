@@ -16,8 +16,8 @@ export interface GridContainerProps extends ContainerProps {}
 
 const useStyles = makeStyles(styles)
 
-const GridContainer = (props: GridContainerProps) => {
-  const {children, className, ...rest} = props
+const GridContainer = ({children, className = "", ...rest}: GridContainerProps) => {
+
   const classes = useStyles()
   return (
     <Grid container {...rest} className={`${classes.grid} ${className}`}>
