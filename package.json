@@ -1,5 +1,27 @@
 {
   "devDependencies": {
     "typescript": "^4.3.4"
+  },
+  "name": "avanti-shared",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mKontakis/avanti-shared.git"
+  },
+  "author": "Manos Kontakis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mKontakis/avanti-shared/issues"
+  },
+  "homepage": "https://github.com/mKontakis/avanti-shared#readme",
+  "description": "",
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
