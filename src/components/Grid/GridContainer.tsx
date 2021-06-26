@@ -2,7 +2,7 @@
 import {createStyles, makeStyles} from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import React from 'react'
-import {GridContainerProps} from "../props/containerProps";
+import {ContainerProps} from "../props/containerProps";
 
 const styles = createStyles({
   grid: {
@@ -12,9 +12,11 @@ const styles = createStyles({
   },
 })
 
+export interface GridContainerProps extends ContainerProps {}
+
 const useStyles = makeStyles(styles)
 
-export default function GridContainer(props: GridContainerProps) {
+const GridContainer = (props: GridContainerProps) => {
   const {children, className, ...rest} = props
   const classes = useStyles()
   return (
@@ -22,4 +24,6 @@ export default function GridContainer(props: GridContainerProps) {
       {children}
     </Grid>
   )
-}
+};
+
+export default GridContainer

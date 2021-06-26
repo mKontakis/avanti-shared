@@ -2,7 +2,7 @@ import React from 'react'
 
 import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
-import {GridContainerProps} from "../props/containerProps";
+import {ContainerProps} from "../props/containerProps";
 import { createStyles } from "@material-ui/core";
 
 const styles = createStyles({
@@ -16,7 +16,7 @@ const styles = createStyles({
   },
 })
 
-type GridItemProps = GridContainerProps
+export interface GridItemProps extends ContainerProps {}
 
 const useStyles = makeStyles(styles)
 

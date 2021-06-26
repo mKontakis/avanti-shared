@@ -1,14 +1,11 @@
 import React from "react";
 
-type GridContainerProps = {
+interface ContainerProps {
     children: React.ReactNode,
-    className: String
-} & typeof defaultProps
-
-const defaultProps = {
-    className: '',
+    className: String,
+    [key: string]: any
 }
 
 export {
-    GridContainerProps
+    ContainerProps
 }
