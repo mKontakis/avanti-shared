@@ -7,7 +7,10 @@ module.exports = {
         '^.+\\.tsx?$': 'ts-jest',
     },
     setupFilesAfterEnv: ['@testing-library/jest-dom', 'jest-extended'],
-
+    moduleDirectories: [
+        'node_modules',
+        'src'
+    ],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
     moduleNameMapper: {
         // Allow `@/` to map to `src/client/` in Jest tests
